@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Secure Login</title>
+  </head>
+  <style>
+      body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  background-image: url("https://pgaacreativedesign.com/sites/default/files/styles/project_page_banner/public/projects/banner/TANYANKEE.jpg"); 
+  background-size: cover;
+  background-position: center; 
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-form{
+  font-size: 20px;
+  padding: 25px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    font-size: 20px;
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+    transition: 1s;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  opacity: 0; 
+  animation: fadeIn 0.5s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } 
+  to { opacity: 1; } 
+}
+  </style>
+  <body>
+    
+      <div class="container">
+        
+         <div class="logo-container">
+      <img src="https://www.ue.edu.ph/mla/wp-content/uploads/2020/12/UE_RED_SEAL_09.png" width="50" length="100" alt="Logo 1">
+      <img src="https://scontent.fbag4-1.fna.fbcdn.net/v/t39.30808-6/366058310_740986774705204_1160322679375017007_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFeXiiZx36x4rs__iNLjKRvMCRsNMLgMVIwJGw0wuAxUoJilTCUiZznFmVDXUoO7sm0y57PHZnX1nozwDDO7qoZ&_nc_ohc=zbxPevpEnLUQ7kNvgF5BmKF&_nc_ht=scontent.fbag4-1.fna&oh=00_AfD4B2G4zS2hovO68hmG6KcbAAD23NTVF_qcAwp7LftRvg&oe=663D41DD" width="50" length="100" alt="Logo 2">
+    </div>
+        
+        <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t1.15752-9/433555298_234186959720447_5991754890342803655_n.png?stp=dst-png_s2048x2048&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG7-P9wEyEVeD9YVLx1rVq7C0fLuMw8DFwLR8u4zDwMXH-DXMA8HPE57co9ndlqDetQbg2yg8Z0DCjHYzraPvgl&_nc_ohc=q2JqiVe9XvAQ7kNvgECEWPi&_nc_ht=scontent.fmnl30-3.fna&oh=03_Q7cD1QEDBNjYIaH3AY-KIuq3ZSZHR3XMxG_gjQN1R0SKHYDZxQ&oe=665ED9AE" width="500" length="100"/>
+          <form id="login-form">
+              <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+                  <p id="username-error" class="error-message"></p>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+                  <p id="password-error" class="error-message"></p>
+              </div>
+              <button type="submit">Login</button>
+          </form>
+      </div>
+      <script src="script.js">
+      </script>
+  </body>
+</html>
